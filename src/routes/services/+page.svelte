@@ -24,7 +24,7 @@
   .services {
     background-color: var(--bg);
     color: var(--text);
-    margin: 1rem;
+    margin: 0.5rem; /* Reduced from 1rem */
     padding: 1rem;
     font-family: system-ui, sans-serif;
     line-height: 1.6;
@@ -32,14 +32,14 @@
   }
 
   .services h1 {
-    font-size: 1.75rem; /* Smaller base font for mobile */
-    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem; /* Reduced from 1.5rem */
     color: var(--accent);
     text-align: center;
   }
 
   .section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem; /* Reduced from 1.5rem */
     background: var(--light);
     border: 1px solid var(--border);
     padding: 1rem;
@@ -53,8 +53,8 @@
   }
 
   .section h2 {
-    font-size: 1.25rem; /* Smaller base font for mobile */
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem; /* Reduced from 0.5rem */
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -62,8 +62,8 @@
   }
 
   .section p {
-    margin-top: 0.5rem;
-    font-size: 0.875rem; /* Readable text size for mobile */
+    margin-top: 0.25rem; /* Reduced from 0.5rem */
+    font-size: 0.875rem;
   }
 
   .icon {
@@ -75,27 +75,29 @@
   @media (min-width: 768px) {
     .services {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 1rem auto; /* Reduced from 2rem */
       padding: 2rem;
     }
 
     .services h1 {
       font-size: 2.75rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem; /* Reduced from 2rem */
     }
 
     .section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem; /* Reduced from 2.5rem */
       padding: 1.5rem;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
     }
 
     .section h2 {
       font-size: 1.5rem;
+      margin-bottom: 0.5rem; /* Reduced from default */
     }
 
     .section p {
       font-size: 1rem;
+      margin-top: 0.5rem; /* Reduced from default */
     }
 
     .icon {
