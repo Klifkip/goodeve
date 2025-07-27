@@ -24,28 +24,27 @@
   .services {
     background-color: var(--bg);
     color: var(--text);
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 2rem;
+    margin: 1rem;
+    padding: 1rem;
     font-family: system-ui, sans-serif;
-    line-height: 1.7;
+    line-height: 1.6;
     border-radius: 8px;
   }
 
   .services h1 {
-    font-size: 2.75rem;
-    margin-bottom: 2rem;
+    font-size: 1.75rem; /* Smaller base font for mobile */
+    margin-bottom: 1.5rem;
     color: var(--accent);
     text-align: center;
   }
 
   .section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     background: var(--light);
     border: 1px solid var(--border);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
   }
 
@@ -54,8 +53,8 @@
   }
 
   .section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.25rem; /* Smaller base font for mobile */
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -64,8 +63,46 @@
 
   .section p {
     margin-top: 0.5rem;
+    font-size: 0.875rem; /* Readable text size for mobile */
   }
 
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* Desktop and larger screens */
+  @media (min-width: 768px) {
+    .services {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    .services h1 {
+      font-size: 2.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+    }
+
+    .section p {
+      font-size: 1rem;
+    }
+
+    .icon {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+  }
 </style>
 
 <section class="services">
