@@ -8,11 +8,34 @@
     color: #1f2937;
   }
 
+  /* Make the banner responsive */
+  .home img {
+    width: 100%;           /* fills container width */
+    height: auto;           /* keeps proportions */
+    display: block;         /* removes inline gaps */
+    border-radius: 8px;     /* optional: soft corners */
+    object-fit: cover;      /* crops nicely on narrow screens */
+  }
+
+  /* Optional: make image behave like a banner */
+  @media (max-width: 600px) {
+    .home img {
+      height: 160px;        /* fixed banner height on phones */
+      object-fit: cover;    /* crop nicely */
+    }
+  }
+
   .home h1 {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
     color: #1e40af;
+  }
+
+  @media (max-width: 600px) {
+    .home h1 {
+      font-size: 1.8rem; /* smaller heading on phones */
+    }
   }
 
   .home ul {
@@ -30,7 +53,7 @@
 </style>
 
 <section class="home">
-  <img src="/gmp-home-banner4-920x210.webp" alt="">
+  <img src="/gmp-home-banner4-920x210.webp" alt="Construction banner">
   <h1>WELCOME</h1>
 
   <p>
